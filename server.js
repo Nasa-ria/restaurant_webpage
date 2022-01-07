@@ -2,7 +2,7 @@ const express = require("express");
 const Connection = require("./database");
 const path = require('path')
 const axios = require("axios")
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 7000;
 const app = express();
 const cors = require("cors");
 
@@ -28,8 +28,9 @@ app.get('/about', (request, response) => {
 			if (err) throw err;
 			if (comments) {
 				response.render('about', { title: "About",comments });
-				// res.send(result)
-			console.log(comments)
+				// response.send(comments)
+			// console.log(comments)
+			// return;
 			}
 		
 		});
@@ -103,6 +104,7 @@ app.post('/about', async (req,res)=>{
 		} else {
 			res.status(200).send(data)
 		}
+		return;
 	} )
 })
 

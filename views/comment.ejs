@@ -4,6 +4,7 @@
 	<body>
 		<%- include('./partials/nav.ejs') %>
 		<div class="comment">
+            
             <form class="form" id="form-input" action="/comment" method="post">
                <label class="text">User Name :         
                 <input type="text"  id ="username" name="username"placeholder="type  in your name...." required>
@@ -14,7 +15,7 @@
                 <label class="text_1">Comment Section :
                 <textarea  name="comment_section" id="comment_section" placeholder="enter your comment " required></textarea>
             </label>
-                <button type="submit" value="Submit">send</button>
+                <button  class="com_bt" type="submit" value="Submit">send</button>
             </form>
         </div>
         </form>

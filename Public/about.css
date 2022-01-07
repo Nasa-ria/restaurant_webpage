@@ -1,58 +1,203 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
- .list_abt{
-   
-     display: flex;
-     flex-wrap: wrap;
-     gap: 2em;
-  
- }
- .abttt{
-    background-image: url("assignment/bg36.jpg");
-    background-size: cover;
-   
- }
+.abttt {
+	background-image: url("assignment/restaurant.jpg");
+	background-size: cover;
+}
 
-.abt{
-     display: flex;
-     flex-direction: row;
-    font-family: roboto;
-     margin-left:1em;
-     color: bisque;
-     line-height: 2.5em;
- }
- h3{
-     font-family: roboto;
- }
- /* .abt{
-     margin-top: 1.5em;
-     font-family: roboto;
-     font-size: 12px; 
- } */
- .card_abt{
-     background: rgba(128, 128, 128, 0.253);
-     height: 10em;
-     width: 25em;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     margin-top: 4em;
-     margin-bottom: 3em;
-     border-radius: 2em;
- }
-.comment_link{
-    color: burlywood;
-    margin-top: 5em;
-    display: flex;
-    align-items: right;
-    justify-content: right;
+.abt-header {
+	margin-top: 7em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	/* font-family: roboto; */
 }
-.btn_form{
- width: 7em;
- height: 3em;
+.abt_story {
+	font-family: roboto;
+    text-align: center;
+    width: 60em;
+    font-weight:normal;
+    line-height: 26px;
+    font-size: 19px;
+}
+.headd {
+	margin-top: 2em;
+	font-size: 27px;
+	font-weight: bolder;
+	margin-bottom: 0.5em;
+}
+.form_abt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.search {
+	display: flex;
+	width: 60em;
+	margin-bottom: 3em;
+    justify-content: center;
+}
+
+.btn_abt {
+	width: 4em;
+	height: 3em;
+	border-radius: 10px;
+	border: none;
+	margin-top: 0.2em;
+}
+.abt_cm {
+	color: chocolate;
+	font-family: roboto;
+	font-size: 15px;
+	margin-top: 1em;
+	width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_abt {
+	margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ppp_abt{
+    color: wheat;
+    font-family: roboto;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+  margin-bottom: 2em;
+}
+.p_abt{
+    font-family: roboto;
+  font-style:italic;
+    display: flex;
+
+    justify-content: center;
+    margin-top: 2em;  
+    color: white;
+}
+#card {
+	background-color:rgba(0, 0, 0, 0.664);
+	width: 30em;
+margin-bottom: 2em;
+	border-radius: 8px;
+  
+}
+
+
+
+a.abt_id {
+	color: burlywood;
+	font-size: 15px;
+	font-family: roboto;
+	margin-left: 17em;
+    margin-bottom: 4em;
+}
+.abt_id:hover {
+	color: chocolate;
+}
+/* stlying the meet the team section */
+
+.feature-two ul {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.socils {
+	cursor: pointer;
+	padding-top: 10px;
+	width: 100%;
+	height: 100%;
+	transition: 0.2s ease-in-out;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 2em;
+}
+.socils .li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 5vh;
+	
+    color: white;
+	transition: 0.2s ease-in-out;
+}
+.socils .li i {
+	font-size: 40px;
+
+	text-decoration: none;
+}
+.socils li i:hover {
+	outline: 0;
+	color: chocolate;
+}
+.foods-category {
+	background-color:rgb(100, 100, 100);
+    
+}
+.foods-category h5 {
+	text-align: center;
+	margin-top: 5%;
+	font-weight: 900;
+	font-size: 250%;
+    
+    color: white;
+}
+.second-tables {
+	align-items: center;
+	justify-content: center;
+	gap: 5em;
+	/* background-color: white; */
+}
+.foods1 {
+	background-color: transparent;
+	font-size: 18px;
+	align-items: center;
+	text-align: center;
+}
+.foods1 img {
+	width: 100%;
+	height: 10em;
+	position: relative;
+	margin-top: 6px;
+	border-radius: 50%;
+}
+.foods_detail {
+	font-weight: 100;
+	font-size: 17px;
+	color: white;
+	line-height: 25.5px;
+	overflow: hidden;
+}
+.food-response{
+    color: white;
+}
+.features-two {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 1em;
+}
+.commentee {
+	margin-top: 5%;
+}
+.commentee h5 {
+	color: black;
+	font-size: 50px;
+	text-align: center;
+}
+.teams {
+	margin-bottom: -45px;
 }
