@@ -1,0 +1,41 @@
+
+
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+
+	<body>
+		<%- include('./partials/nav.ejs') %>
+        <div class="abttt">
+            <a href="/comment"  class="comment_link">Comment Section</a>
+
+            <form action=""  method="post" class="search">
+                <input  type=text id=search name= search placeholder="search .......">
+                <button  class ="btn_form" type="Submit">submit</button>
+            </form>
+           <div class="list_abt">
+            <div class="card_abt">
+                <div  class="abt_d">
+            <% comments.forEach((comment) =>{  %>
+           <p> <%-comment.username %></p>
+           <p> <%-comment.email %></p>
+           <p> <%-comment.comment_section %>   </p>                
+        <a href="/about/<%-comment._id %>">edit</a>
+
+      
+
+         <% }) %>
+
+        </div>
+        </div>
+
+ 
+</div>
+
+<%- include('./partials/footer.ejs') %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+<script src="about.js"></script>
+
+</body>
+</html>

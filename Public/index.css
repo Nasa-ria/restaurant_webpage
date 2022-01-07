@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	overflow-x: hidden!important;
+}
+header {
+	position: fixed;
+	width: 100%;
+}
+header.sticky {
+	padding: 1px;
+	background-color: #2528309c;
+}
+
+.section_1 {
+	background-image: url("assignment/restaurant.jpg");
+	background-size: cover;
+	height: 170vh;
+	
+}
+img {
+	width: 7em;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #02081b;
+}
+/* .nav {
+	display: flex;
+	flex-direction: row;
+
+} */
+.nav_list{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	font-size: 12px;
+}
+
+.tabs{
+	display: flex;
+	gap: 2em;
+}
+a {
+	text-decoration: none;
+	color: white;
+	padding: 0 1em;
+	font-family: sans-serif;
+}
+a:hover {
+	color: blue;
+}
+.food_cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	margin-left: 50px;
+}
+.card {
+	background-color: white;
+	width: 14em;
+	height: 17em;
+	/* border-radius: 5px; */
+	margin-top: 50px;
+}
+.card img {
+	width: 14em;
+	height: 9em;
+	padding: 5px;
+}
+.card_menu {
+	font-size: 21px;
+	font-family: roboto;
+}
+.card_menu li {
+	list-style: none;
+	text-align: center;
+	margin-top: 12px;
+}
+.heading {
+	color: white;
+	padding: 10.9%;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+.heading p {
+	font-family: roboto;
+	font-size: 40px;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+.heading_h1{
+	font-size: 6em;
+	margin-left: 0.5em;
+	font-weight:bolder;
+}
+.section_2 {
+	background-color: rgb(223, 213, 213);
+	height: 25em;
+}
+.headings_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.h1 {
+	font-family: roboto;
+	font-weight: bolder;
+	font-size: x-large;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+.h2 {
+	font-family: roboto;
+	font-size: medium;
+	margin-bottom: 2em;
+	text-align: center;
+}
+.headings_section img {
+	width: 40em;
+}
+.section_3 {
+	background-image: url("assignment/checked_menu.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 90vh;
+	background-position: center;
+}
+
+.p_heading {
+	font-size: 50px;
+	font-family: roboto;
+	color: white;
+}
+.sub_heading {
+	font-size: 60px;
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: white;
+	margin-bottom: 1em;
+}
+.words {
+	font-family: roboto;
+	color: gray;
+	font-weight: bold;
+	margin-bottom: 5em;
+}
+.statement {
+	display: flex;
+	flex-direction: column;
+	margin: 0 10%;
+	padding-top: 8em;
+}
+
+/* The actual popup */
+.popup .popuptext {
+	visibility: hidden;
+
+	background-color: rgba(0, 0, 0, 0.664);
+	/* color: orange; */
+
+	text-align: center;
+	border-radius: 6px;
+	width: 40em;
+	height: 40em;
+
+	position: absolute;
+	list-style: none;
+	margin-left: 40em;
+	margin-top: -30em;
+	gap: 52px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.7s case-in-out;
+	/* transition: opacity 0.7s case-out; */
+}
+.popup .popuptext ul {
+	text-align: center;
+	list-style: none;
+	color: white;
+	line-height: 45px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	border-width: 5px;
+	border-style: solid;
+	/* border-color: #444 transparent transparent transparent; */
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+	transition: opacity 0.7s case-in-out;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}	
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.popup {
+	width: 15em;
+	height: 5em;
+	color: white;
+	border: 0;
+	background-color: orange;
+	font-size: 15px;
+	border-radius: 12px;
+}
+.section_4 {
+	height: 45em;
+	background-color: rgb(236, 234, 234);
+}
+.food_data {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+	width: 70em;
+	justify-content: center;
+	margin-left: 8em;
+	gap: 0 3em;
+}
+.data_briefings {
+	color: grey;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: center;
+	font-family: roboto;
+	line-height: 1.3em;
+	/* text-align: center; */
+}
+.data_header {
+	font-size: 21px;
+	color: slategrey;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.data_card img {
+	width: 200px;
+	justify-content: center;
+	margin-left: 37px;
+	margin-bottom: 1em;
+	margin-top: 5em;
+}
+.section_5 {
+	background-image: url("assignment/bg21.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 35em;
+	overflow-y: hidden;
+}
+.message {
+	color: gray;
+	line-height: 10em;
+}
+.mySlides {
+	padding: 10em;
+	text-align: center;
+	color: white;
+}
+.section_6 {
+	background-image: url("assignment/bg5.jpg");
+	height: 480px;
+	overflow-y: hidden;
+}
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10em;
+	list-style: none;
+	/* align-items: center; */
+	/* margin-top: -5em; */
+	justify-content: center;
+}
+.orders {
+	text-align: center;
+	color: gray;
+	font-size: 20px;
+	margin-top: 5em;
+	font-family: "roboto";
+	font-weight: 7px;
+}
+.numbers {
+	font-size: 90px;
+	color: black;
+}
+
+.section_7 {
+	background-image: url("assignment/bg36.jpg");
+	height: 47em;
+	background-repeat: no-repeat;
+	/* overflow-y: hidden; */
+}
+h2 {
+	font-weight: 3;
+	font-size: 59px;
+	color: white;
+}
+.form_box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+}
+form {
+	margin-top: 5em;
+}
+
+.input-field {
+	width: 500px;
+
+	background: transparent;
+	border-left: hidden;
+	border-right: hidden;
+}
+.form-control {
+	width: 500px;
+	border-left: hidden;
+	border-right: hidden;
+
+	color: gray;
+	height: 200px;
+
+	font-size: 15px;
+
+	background: transparent;
+}
+
+.form_btn {
+	color: white;
+	background-color: orange;
+	outline: orange;
+	width: 500px;
+	height: 70px;
+	margin-top: 35px;
+	border-radius: 6px;
+	font-size: 20px;
+	font-weight: lighter;
+}
+.form_text {
+	color: gray;
+	margin-top: 30px;
+}
+.paragraph {
+	color: white;
+	font-size: 20px;
+}
+.form_icons {
+	color: white;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.footer {
+	background-color: #252830;
+}
+.footer_text {
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+
+.foot {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 5em;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_icons li {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 3em;
+}
+.footer_img {
+	width: 2em;
+	height: 2em;
+}
+  
+
+

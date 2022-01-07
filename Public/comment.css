@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	overflow-x: hidden !important;
+}
+.comment {
+	background-image: url("assignment/bg36.jpg");
+	background-size: cover;
+	height: 100vh;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+margin-top: 10em;
+gap: 2em;
+/* background: rgba(0, 0, 0, 0.658); */
+/* width: 30em; */
+}
+.text,.text_1{
+    color: blanchedalmond;
+    font-family: roboto;
+    font-size: x-large;
+}
+
+input{
+    width: 38em;
+    height: 3em;
+    border-radius: 1em;
+    border: none;
+    padding: 6px;
+    font-size: 15px;
+    font-family: roboto;
+  
+}
+::placeholder{
+    color: blue;
+  padding: 1em;
+  font-family: roboto;
+  font-size: medium;
+}
+.text_1{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-right: 2em;
+}
+textarea{
+    font-family: roboto;
+    font-size: medium;
+    width: 36em;
+    height: 6em;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    /* height: 20em; */
+    color: blue;
+    border: none;
+  
+}
+button{
+    width: 12em;
+    height: 4em;
+    color:white;
+    background-color: orange;
+    border: none;
+    border-radius: 1em;
+}

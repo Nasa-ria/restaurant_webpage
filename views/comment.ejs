@@ -1,0 +1,26 @@
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+
+	<body>
+		<%- include('./partials/nav.ejs') %>
+		<div class="comment">
+            <form class="form" id="form-input" action="/comment" method="post">
+               <label class="text">User Name :         
+                <input type="text"  id ="username" name="username"placeholder="type  in your name...." required>
+            </label>
+                <label class="text">Email Address :
+                <input type="email"  id="email_address" name="email_address"placeholder="type  in  your email address...." required>
+            </label>
+                <label class="text_1">Comment Section :
+                <textarea  name="comment_section" id="comment_section" placeholder="enter your comment " required></textarea>
+            </label>
+                <button type="submit" value="Submit">send</button>
+            </form>
+        </div>
+        </form>
+
+		<%- include('./partials/footer.ejs') %>
+
+		<script src="index.js"></script>
+	</body>
+</html>

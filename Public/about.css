@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .list_abt{
+   
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2em;
+  
+ }
+ .abttt{
+    background-image: url("assignment/bg36.jpg");
+    background-size: cover;
+   
+ }
+
+.abt{
+     display: flex;
+     flex-direction: row;
+    font-family: roboto;
+     margin-left:1em;
+     color: bisque;
+     line-height: 2.5em;
+ }
+ h3{
+     font-family: roboto;
+ }
+ /* .abt{
+     margin-top: 1.5em;
+     font-family: roboto;
+     font-size: 12px; 
+ } */
+ .card_abt{
+     background: rgba(128, 128, 128, 0.253);
+     height: 10em;
+     width: 25em;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin-top: 4em;
+     margin-bottom: 3em;
+     border-radius: 2em;
+ }
+.comment_link{
+    color: burlywood;
+    margin-top: 5em;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.btn_form{
+ width: 7em;
+ height: 3em;
+}

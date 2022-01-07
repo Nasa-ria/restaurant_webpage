@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    background-image: url("assignment/bg21.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.card_c{
+    margin-left: 25em;
+    margin-top: 8em;
+    width: 37em;
+    height: 25em;
+    background-color:#252830bb; 
+} 
+.us_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.us{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+.us_P ,.number{
+    color: white;
+    font-family: roboto;
+    font-size: 19px;
+    margin-bottom: 1em;
+}
+.c_i{
+    overflow-y: hidden;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+   
+}
+.c_li{
+    overflow-y: hidden;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1em;
+}
+.number{
+    margin-top: 1em;
+   
+}
+.num{
+    color: white;
+    display: flex;
+    gap: 2em;
+    overflow-y: hidden;
+}
+

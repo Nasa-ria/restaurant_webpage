@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .page{
+     background-image: url("assignment/restaurant.jpg");
+     background-size: cover;
+     height: 100vh;
+   
+ }
+ .text_p{
+    
+     font-size: 2em;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 9em;
+        flex-direction: column;
+ }
+.small_l{
+    font-size: 20px;
+    color:  rgb(62, 235, 209);
+    margin-left: 18em;
+    margin-top: 1em;
+}
+.a{
+    color:blanchedalmond;
+}
+.a:hover{
+    color: burlywood;
+}
+.emoji{
+    color:orange; 
+    margin-left: 20em ;
+    /* margin-top: 5em; */
+    font-weight: lighter;
+    /* margin-top: -0.5em; */
+}
+
+
+ 
